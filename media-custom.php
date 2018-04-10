@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Media Custom
+Plugin Name: I Love Coding
 Plugin URI: http://vuminhdao.info
 Version: 1.0.0
-Description: Media Custom for Test
+Description: Plugin test
 Author: vmdao
 */
 
