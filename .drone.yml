@@ -13,7 +13,6 @@ pipeline:
     password: Abc@#123456
     port: 22
     script:
-      - cd /var/www/html/
-      - git clone https://github.com/alezzigo/test-mediacustom.git datagit
-      - cp datagit/index.html ./test.html
-      - ls -lah
+      - git clone https://github.com/alezzigo/test-mediacustom.git /home/drone/datagit
+      - cp /home/drone/datagit/index.html ./web
+      - ls -lah ./web
