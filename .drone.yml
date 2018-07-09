@@ -8,9 +8,9 @@ pipeline:
       - yarn --version
   deploy:
     image: appleboy/drone-ssh
-    host: 51.15.208.87
-    username: drone
-    password: Abc@123456
+    host:51.15.208.87
+    username:drone
+    password:Abc@123456
     port: 22
     script:
       - cd /var/www/html/
