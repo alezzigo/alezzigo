@@ -8,9 +8,9 @@ pipeline:
       - yarn --version
   deploy:
     image: appleboy/drone-ssh
-    host: ${host}
-    username: ${host_user}
-    password: ${host_passwd}
+    host: ${HOST}
+    username: ${HOST_USER}
+    password: ${HOST_PASSWD}
     port: 22
     script:
       - git clone https://github.com/alezzigo/test-mediacustom.git /home/drone/datagit
