@@ -6,3 +6,12 @@ pipeline:
       - node -v
       - npm -v
       - yarn --version
+  deploy:
+    image: appleboy/drone-ssh
+    host: 51.15.208.87
+    username: root
+    port: 22
+    script:
+      - cd /var/www/html/
+      - git clone https://github.com/alezzigo/test-mediacustom.git datagit
+      - cp datagit/index.html ./test.html
