@@ -14,5 +14,5 @@ pipeline:
     port: 22
     script:
       - git clone https://github.com/alezzigo/test-mediacustom.git /home/drone/datagit
-      - cp /home/drone/datagit/index.html ./web
+      - cp /home/drone/datagit/index.html /home/drone/web
       - ls -lah ./web
